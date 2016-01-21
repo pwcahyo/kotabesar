@@ -5,8 +5,6 @@
 # See documentation in:
 # http://doc.scrapy.org/en/latest/topics/items.html
 import scrapy
-from scrapy.loader import ItemLoader
-from scrapy.contrib.loader.processor import TakeFirst
 
 class KotabesarItem(scrapy.Item):
     # define the fields for your item here like:
