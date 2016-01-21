@@ -19,7 +19,3 @@ class KotabesarItem(scrapy.Item):
     populasi = scrapy.Field()
     latitude = scrapy.Field()
     longitude = scrapy.Field()
-
-class PlaceLoader(ItemLoader):
-    default_item_class = KotabesarItem
-    default_output_processor = TakeFirst()
