@@ -13,8 +13,12 @@ BOT_NAME = 'kotabesar'
 
 SPIDER_MODULES = ['kotabesar.spiders']
 NEWSPIDER_MODULE = 'kotabesar.spiders'
-DEPTH_LIMIT = 7
-DOWNLOAD_DELAY = 3
+DEPTH_LIMIT = 120
+DOWNLOAD_DELAY = 10
+
+ITEM_PIPELINES = {
+	'kotabesar.pipelines.KotabesarPipeline': 10000,
+}
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'kotabesar (+http://www.yourdomain.com)'
