@@ -1,7 +1,6 @@
 from scrapy.spiders import Spider
 from scrapy.http.request import Request
 from scrapy.selector import Selector
-from scrapy.loader import ItemLoader
 from kotabesar.items import KotabesarItem
 
 class GeonamesSpider(Spider):
